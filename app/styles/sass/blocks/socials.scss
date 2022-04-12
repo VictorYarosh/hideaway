@@ -1,0 +1,27 @@
+.socials {
+  margin-top: 250px;
+  margin-right: 60px;
+  position: relative;
+
+  &::after {
+    right: -25px;
+    top: -30px;
+    bottom: -30px;
+    content: '';
+    position: absolute;
+    border-right: 1px solid $white;
+  }
+  &::before {
+    top: -30px;
+    bottom: -30px;
+    content: '';
+    position: absolute;
+    border-right: 1px solid $white;
+    left: 25px;
+  }
+  &-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+  }
+}

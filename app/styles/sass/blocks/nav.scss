@@ -1,0 +1,20 @@
+.nav {
+  position: relative;
+
+  &-list {
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+  }
+  &-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 0px 0px 40px $white;
+  }
+}

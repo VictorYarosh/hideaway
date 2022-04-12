@@ -1,0 +1,49 @@
+.header {
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url('../images/dist/img-title.png');
+  position: relative;
+
+  &::before {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.logo {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+
+  &-copy {
+    color: $with;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    position: relative;
+
+    &::after {
+      border-bottom: 1px solid $white;
+      bottom: -60px;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    &-text {
+      letter-spacing: 0.15em;
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
