@@ -86,8 +86,8 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-function styles(done) {
-  src([`app/styles/${preprocessor}/*.*`, `!app/styles/${preprocessor}/_*.*`])
+function styles() {
+  return src([`app/styles/${preprocessor}/*.*`, `!app/styles/${preprocessor}/_*.*`])
     .pipe(eval(`${preprocessor}glob`)())
     .pipe(eval(preprocessor)({ 'include css': true }))
     .pipe(
@@ -99,7 +99,6 @@ function styles(done) {
     .pipe(concat('app.min.css'))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream());
-  return done();
 }
 
 function images() {

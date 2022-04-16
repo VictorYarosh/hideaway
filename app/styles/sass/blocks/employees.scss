@@ -1,0 +1,26 @@
+.employees {
+  background-image: url('../images/dist/seco-background.jpg');
+
+  &-person {
+    padding: 40px 0;
+    text-align: center;
+
+    &-title {
+      margin-top: 17px;
+      color: $white;
+      text-align: center;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &-name {
+      text-align: center;
+
+      margin-top: 17px;
+      color: $orange;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
