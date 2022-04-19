@@ -1,0 +1,28 @@
+.request {
+  height: 775px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/dist/wedding-couple.png');
+}
+.request-form {
+  padding-top: 60px;
+
+  &-logo {
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  &-copy {
+    color: $black;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
