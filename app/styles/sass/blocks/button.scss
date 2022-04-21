@@ -13,4 +13,9 @@
     color: $white;
     background-color: $greyOrange;
   }
+  &.btn-secondary {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+  }
 }

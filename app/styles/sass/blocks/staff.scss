@@ -1,6 +1,45 @@
 .staff {
   background-color: $black;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    color: $orange;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 70px 0 30px;
+  }
   &-cards {
-    background-color: $blackGrey;
+    &-item {
+      display: flex;
+      background-color: $blackGrey;
+      padding: 80px;
+      margin-bottom: 60px;
+    }
+
+    &-description {
+      &-name {
+        color: $orange;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-title {
+        color: $white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &-copy {
+        color: $white;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 10px;
+      }
+    }
   }
 }
