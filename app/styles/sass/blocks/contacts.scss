@@ -16,8 +16,8 @@
       line-height: 61px;
       letter-spacing: 10px;
 
-      @media (max-width: 375px) {
-        letter-spacing: 6px;
+      @media (max-width: 425px) {
+        letter-spacing: 2px;
       }
     }
     &-text {
@@ -27,12 +27,12 @@
       line-height: 24px;
       letter-spacing: 5px;
 
-      @media (max-width: 375px) {
-        letter-spacing: 3px;
+      @media (max-width: 425px) {
+        letter-spacing: 2px;
       }
     }
-    @media (max-width: 375px) {
-      margin: 0 0 50px 0;
+    @media (max-width: 425px) {
+      margin: 25px;
     }
   }
 }

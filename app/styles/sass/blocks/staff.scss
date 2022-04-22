@@ -11,6 +11,13 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 70px 0 30px;
+
+    @media (max-width: 425px) {
+      font-size: 17px;
+    }
+    @media (max-width: 375px) {
+      font-size: 15px;
+    }
   }
   &-cards {
     &-item {
@@ -18,6 +25,20 @@
       background-color: $blackGrey;
       padding: 80px;
       margin-bottom: 60px;
+
+      &-img {
+        width: 147px;
+        height: 154px;
+        border-radius: 100px;
+        @media (max-width: 1024px) {
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 40px;
+        }
+      }
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
     }
 
     &-description {
