@@ -26,34 +26,41 @@
       padding: 80px;
       margin-bottom: 60px;
 
+      @media (max-width: 768px) {
+        padding: 30px;
+      }
+
       &-img {
         width: 147px;
-        height: 154px;
-        border-radius: 100px;
+        height: 147px;
+        border-radius: 50%;
+        object-fit: cover;
+
         @media (max-width: 1024px) {
           display: block;
           margin: 0 auto;
           margin-bottom: 40px;
         }
       }
+
       @media (max-width: 1024px) {
         flex-direction: column;
       }
-    }
 
-    &-description {
       &-name {
         color: $orange;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
       }
+
       &-title {
         color: $white;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
       }
+
       &-copy {
         color: $white;
         font-weight: 300;

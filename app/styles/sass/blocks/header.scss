@@ -15,6 +15,29 @@
     position: absolute;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   }
+
+  &-body {
+    position: relative;
+    padding: 0 15px;
+    margin: 150px 0;
+
+    &::after {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      border-right: 1px solid $white;
+    }
+    &::before {
+      top: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      border-right: 1px solid $white;
+      left: 0;
+    }
+  }
 }
 
 .logo {
