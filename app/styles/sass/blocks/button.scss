@@ -28,4 +28,10 @@
     line-height: 15px;
     padding: 3px 0 25px;
   }
+  &.btn-gold {
+    color: $white;
+    background: linear-gradient(90.59deg, #bd9964 1.6%, #efcd8c 97.85%);
+    display: flex;
+    justify-content: center;
+  }
 }
