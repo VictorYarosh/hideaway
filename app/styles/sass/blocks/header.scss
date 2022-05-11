@@ -16,10 +16,39 @@
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   }
 
+  &-course {
+    background-image: url('../images/dist/bg-photo-second.png');
+
+    &::before {
+      height: 10%;
+    }
+  }
+
   &-body {
     position: relative;
     padding: 0 15px;
     margin: 150px 0;
+
+    &-course {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .discription {
+      text-align: end;
+      margin-right: 80px;
+
+      .orange-c {
+        color: $orange;
+      }
+
+      &-text {
+        color: $white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
 
     &::after {
       right: 0;
@@ -45,6 +74,11 @@
   display: flex;
   justify-content: center;
 
+  &-course {
+    justify-content: flex-start;
+    padding: 70px 0 0 80px;
+  }
+
   &-copy {
     color: $white;
     letter-spacing: 0.15em;
@@ -52,6 +86,10 @@
     font-size: 50px;
     line-height: 61px;
     position: relative;
+
+    &-course {
+      color: $black;
+    }
 
     &::after {
       border-bottom: 1px solid $white;
