@@ -1,5 +1,5 @@
 .header {
-  //   padding-bottom: 70px;
+  padding-bottom: 100px;
   &-course {
     background-image: url('../images/dist/bg-photo-second.png');
 
@@ -11,23 +11,24 @@
   .logo-course {
     display: flex;
     justify-content: flex-start;
+
+    .logo-copy {
+      color: $black;
+
+      &::after {
+        border-bottom: none;
+      }
+
+      &-text {
+        letter-spacing: 5px;
+      }
+    }
   }
 
   &::after {
     border-bottom: none;
   }
 
-  .logo-copy {
-    color: $black;
-
-    &::after {
-      border-bottom: none;
-    }
-
-    &-text {
-      letter-spacing: 5px;
-    }
-  }
   .header-body-course {
     display: flex;
     flex-direction: row-reverse;
@@ -35,19 +36,13 @@
       justify-content: center;
     }
 
-    .discription {
+    .description {
       text-align: end;
       margin-right: 60px;
-
-      .orange-c {
-        color: $orange;
-      }
-      &-text {
-        color: $white;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-      }
+      color: $white;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }

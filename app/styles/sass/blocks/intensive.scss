@@ -1,0 +1,13 @@
+.intensive {
+  background-image: url('../images/dist/bg-third.png');
+  &-program {
+    padding: 40px 0 50px 0;
+
+    &-title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+      //   text-align: center;
+    }
+  }
+}
