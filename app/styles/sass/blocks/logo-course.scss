@@ -1,0 +1,53 @@
+.header {
+  //   padding-bottom: 70px;
+  &-course {
+    background-image: url('../images/dist/bg-photo-second.png');
+
+    &::before {
+      height: 35%;
+    }
+  }
+
+  .logo-course {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &::after {
+    border-bottom: none;
+  }
+
+  .logo-copy {
+    color: $black;
+
+    &::after {
+      border-bottom: none;
+    }
+
+    &-text {
+      letter-spacing: 5px;
+    }
+  }
+  .header-body-course {
+    display: flex;
+    flex-direction: row-reverse;
+    .socials {
+      justify-content: center;
+    }
+
+    .discription {
+      text-align: end;
+      margin-right: 60px;
+
+      .orange-c {
+        color: $orange;
+      }
+      &-text {
+        color: $white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}
