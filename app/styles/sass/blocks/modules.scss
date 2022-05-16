@@ -1,0 +1,51 @@
+.modules {
+  color: $white;
+  background: url(../images/dist/seco-background.jpg);
+  list-style: none;
+  padding-bottom: 80px;
+
+  &-header {
+    width: 100%;
+    color: white;
+
+    &-label {
+      color: $white;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      cursor: pointer;
+
+      &::after {
+        content: '\276F';
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all 0.35s;
+      }
+    }
+
+    &-content {
+      color: $white;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      text-decoration: none;
+    }
+  }
+}
+
+input:checked {
+  + .modules-header-label {
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .modules-header-content {
+    max-height: 100vh;
+    padding: 5px;
+  }
+}
