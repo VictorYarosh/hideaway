@@ -36,25 +36,23 @@
       // visibility: hidden;
       // opacity: 0;
     }
-  }
-}
 
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-input:checked {
-  + .modules-header-label {
-    &::after {
-      transform: rotate(90deg);
+    &-checkbox {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
     }
-  }
-  ~ .modules-header-content {
-    padding: 10px;
-    display: block;
-    // visibility: visible;
-    // opacity: 1;
+    &-checkbox:checked {
+      + .modules-header-label {
+        &::after {
+          transform: rotate(90deg);
+        }
+
+        ~ .modules-header-content {
+          padding: 10px;
+          display: block;
+        }
+      }
+    }
   }
 }
