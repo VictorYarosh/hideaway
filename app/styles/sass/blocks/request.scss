@@ -26,3 +26,36 @@
     text-align: center;
   }
 }
+.request-extra {
+  background-image: url('../images/dist/ellipse-left.png'), url('../images/dist/ellipse-right.png');
+  background-position: top left, right;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 50px 0 50px 0;
+
+  &-img {
+    padding-left: 50px;
+  }
+
+  &-form {
+    padding-left: 80px;
+    &-logo {
+      text-transform: uppercase;
+      color: $black;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 18px;
+    }
+    &-copy {
+      color: $black;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+}

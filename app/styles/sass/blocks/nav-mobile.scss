@@ -73,7 +73,6 @@
   // z-index: 3;
   transition: 0.5s;
   transition-delay: 0.5s;
-  overflow: hidden;
 
   > .nav-mobile-list {
     text-align: center;
@@ -90,7 +89,7 @@
       > a {
         text-decoration: none;
         text-transform: uppercase;
-        color: $black;
+        color: $white;
 
         font-family: sans-serif;
         display: block;
