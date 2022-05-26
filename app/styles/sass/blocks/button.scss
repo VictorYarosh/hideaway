@@ -34,4 +34,8 @@
     display: flex;
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
