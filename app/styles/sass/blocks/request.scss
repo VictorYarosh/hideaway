@@ -33,20 +33,19 @@
   display: flex;
   padding: 50px 0 50px 0;
 
-  &-img {
-    padding-left: 50px;
-  }
+  // &-img {
+  //   padding-left: 50px;
+  // }
 
   &-form {
-    padding-left: 80px;
     &-logo {
       text-transform: uppercase;
       color: $black;
       font-weight: 500;
       font-size: 24px;
-      line-height: 40px;
+      line-height: 35px;
       text-align: center;
-      letter-spacing: 18px;
+      letter-spacing: 8px;
     }
     &-copy {
       color: $black;
@@ -68,6 +67,18 @@
       &-logo {
         letter-spacing: 10px;
         font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 20px 45px 40px;
+  }
+  @media (max-width: 425px) {
+    padding-left: 0;
+    &-form {
+      &-logo {
+        letter-spacing: 7px;
+        font-size: 16px;
       }
     }
   }

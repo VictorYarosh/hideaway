@@ -11,10 +11,25 @@
     letter-spacing: 8px;
     padding: 75px 0 40px 0;
     text-transform: uppercase;
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+      letter-spacing: 6px;
+    }
+    @media (max-width: 375px) {
+      font-size: 14px;
+    }
   }
   &-copy {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
+
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+    @media (max-width: 375px) {
+      font-size: 12px;
+    }
   }
 }
