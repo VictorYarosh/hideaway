@@ -16,21 +16,138 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="container">
+<body id="appBody">
+  <header class="header header-course">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href="/index.html">главная</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="/course.html">курсы</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="/"></a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="/price.html">цены</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="/contacts.html">контакты</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="tel:+380962209600">+38 096 220 96 00 </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="nav-mobile-phone" href="tel:+380962209600">+38 096 220 96 00 </a>
+    <input class="burger-input" id="burger" type="checkbox" />
 
-    <h1 class="text-center">Спасибо!</h1>
 
-  </div><!-- /.container -->
+    <label class="burger" for="burger" onClick="">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </label>
+    <nav class="nav-mobile">
+      <ul class="nav-mobile-list">
+        <li class="nav-mobile-list-item">
+          <a href="/index.html">Главная</a>
+        </li>
+        <li class="nav-mobile-list-item">
+          <a href="/course.html">курсы</a>
+        </li>
+        <li class="nav-mobile-list-item">
+          <a href="/"></a>
+        </li>
+        <li class="nav-mobile-list-item">
+          <a href="/price.html">цены</a>
+        </li>
+        <li class="nav-mobile-list-item">
+          <a href="/contacts.hhtml">контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="logo logo-course">
+        <a class="logo-link" href="/index.html">
+          <img src="images/dist/logo.png" />
+        </a>
+        <span class="logo-copy">HIDEAWAY
+          <h4 class="logo-copy-text">
+            Психологический центр
+          </h4>
+        </span>
+      </div>
+      <div class="header-body header-body-course">
+        <div class="socials">
+          <div class="socials-item">
+            <a href="https://t.me/Hideaway_mind" target="_blank">
+              <img src="images/dist/telegram.svg" />
+            </a>
+          </div>
+          <div class="socials-item">
+            <a href="https://www.facebook.com/hideaway.psychology" target="_blank">
+              <img src="images/dist/facebook.svg" />
+            </a>
+          </div>
+          <div class="socials-item">
+            <a href="https://api.whatsapp.com/send/?phone=%2B380962209600&text&app_absent=0" target="_blank">
+              <img src="images/dist/whatsapp.svg" />
+            </a>
+          </div>
+          <div class="socials-item">
+            <a href="https://www.instagram.com/hideaway_mind/" target="_blank">
+              <img src="images/dist/instagram.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Благодарим за Ваш запрос.
+          </p>
+          <p>
+            В ближайшее время наш администратор свяжеться с Вами
+          </p>
 
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer class="footer">
+    <div class="footer-block">
+      <div class="footer-logo">
+        <img src="images/dist/logo.png" />
+      </div>
+      <span class="footer-title">hideaway</span>
+      <span class="footer-phone">+38 096 220 96 00</span>
+      <ul class="footer-socials">
+        <li class="footer-socials-item">
+          <a href="https://t.me/Hideaway_mind" target="_blank">
+            <img src="images/dist/facebook.svg" />
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="https://www.facebook.com/hideaway.psychology" target="_blank">
+            <img src="images/dist/telegram.svg" />
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="https://api.whatsapp.com/send/?phone=%2B380962209600&text&app_absent=0" target="_blank">
+            <img src="images/dist/whatsapp.svg" />
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="https://www.instagram.com/hideaway_mind/" target="_blank">
+            <img src="images/dist/instagram.svg" />
+          </a>
+        </li>
+      </ul>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+      <p class="footer-address">Украина, г.Киев, ул. Евгения Коновальца 32б</p>
+    </div>
+  </footer>
+
+  <script src="js/app.min.js"></script>
 
 </html>

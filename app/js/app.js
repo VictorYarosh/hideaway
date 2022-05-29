@@ -71,9 +71,9 @@
 //   }
 // }
 
-document.querySelector('#menu-checkbox').addEventListener('change', function (e) {
-  document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
-});
+// document.querySelector('#menu-checkbox').addEventListener('change', function (e) {
+//   document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
   const request = document.getElementById('request');
