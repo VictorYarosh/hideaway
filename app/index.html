@@ -339,10 +339,13 @@
                     <h4 class="request-form-copy">Оставьте заявку и в течении ближайшего времени, наш администратор
                         свяжется с Вами.</h4>
 
-                    <input class="form-control mb-3" placeholder="Ваше имя">
-                    <input class="form-control mb-3" placeholder="Телефон в формате +380">
-                    <textarea class="form-control mb-3" placeholder="Текст сообщения" rows="4"></textarea>
-                    <button class="btn btn-primary w-100" onclick="">Отправить</button>
+                    <input class="form-control mb-3" placeholder="Ваше имя" name="name">
+                    <input class="form-control mb-3" placeholder="Телефон в формате +380" name="tel">
+                    <textarea class="form-control mb-3" placeholder="Текст сообщения" rows="4"
+                        name="formText"></textarea>
+                    <button class="btn btn-primary w-100 " onclick="" name="submit">Отправить</button>
+                    <div class="g-recaptcha" data-sitekey="6Le0eC8gAAAAAMMVxko9ckI2Qn03pAKNAwhV7XXW"></div>
+                    <div class="text-danger" id="recaptchaError"></div>
                 </form>
             </div>
         </div>

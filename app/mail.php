@@ -7,6 +7,9 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['name'];
 $phone = $_POST['tel'];
 $formText = $_POST['formText'];
+$submit = $_POST['submit'];
+
+
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -20,12 +23,7 @@ $mail->Port = 465; // TCP port to connect to / этот порт может от
 
 $mail->setFrom('mailhideaway@varitas.men'); // от кого будет уходить письмо?
 $mail->addAddress('pavelbiletskyi87@gmail.com');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+  
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта';
@@ -37,4 +35,25 @@ if(!$mail->send()) {
 } else {
     header('location: thank-you.html');
 }
+
+if ( $submit['submit']) {
+    
+    if ( !$_POST['g-recaptcha-response'])
+        exit('Заполните капчу');
+    // var_dump($_POST);
+    
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $key = '6Le0eC8gAAAAAAct1RUo_qH6CctLVrvOxnj4k60j';
+    $query = $url. '?secret='.$key.'&response='.$_POST['g-recaptcha-response'].'&remoteip='.$_SERVER['REMOTE_ADDR'];
+    
+    $data = file_get_contents($query);
+
+    exit($data);
+    // exit ('')
+}
 ?>
+
+
+
+
+ 
