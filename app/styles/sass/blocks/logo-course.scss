@@ -1,7 +1,9 @@
 .header {
   padding-bottom: 100px;
   &-course {
-    background-image: url('../images/dist/bg-photo-second.png');
+    padding: 40px 0;
+    background-image: url('../images/dist/bg-course.png');
+    background-position: center;
 
     &::before {
       height: 35%;
@@ -10,9 +12,10 @@
     .logo-course {
       display: flex;
       justify-content: flex-start;
+      padding-bottom: 100px;
 
       .logo-copy {
-        color: $black;
+        color: $white;
 
         &::after {
           border-bottom: none;
@@ -31,6 +34,7 @@
     .header-body-course {
       display: flex;
       flex-direction: row-reverse;
+      margin: 0 0 150px;
       .socials {
         justify-content: center;
       }

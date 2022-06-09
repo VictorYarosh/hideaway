@@ -1,9 +1,10 @@
 .header {
-  padding-bottom: 120px;
+  padding-bottom: 30px;
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
   background-image: url('../images/dist/img-title.png');
+  background-position: center;
   position: relative;
 
   &::before {
@@ -36,6 +37,14 @@
       position: absolute;
       border-right: 1px solid $white;
       left: 0;
+    }
+  }
+  @media (max-width: 425px) {
+    &::after {
+      height: 39%;
+    }
+    &::before {
+      height: 30%;
     }
   }
 }
